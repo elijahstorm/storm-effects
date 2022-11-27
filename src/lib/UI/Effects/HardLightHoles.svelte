@@ -7,7 +7,7 @@
 		display: grid;
 		height: 100%;
 		width: 100%;
-		background-color: white;
+		background-color: rgb(34, 34, 34);
 		mix-blend-mode: hard-light;
 		grid-template: 1fr / 1fr;
 	}
