@@ -5,8 +5,8 @@
 <style>
 	section {
 		display: grid;
-		height: 100%;
-		width: 100%;
+		height: 100vh;
+		width: 100vw;
 		background-color: rgb(34, 34, 34);
 		mix-blend-mode: hard-light;
 		grid-template: 1fr / 1fr;

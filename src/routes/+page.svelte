@@ -3,13 +3,10 @@
 	import HardLightHoles from '$lib/UI/Effects/HardLightHoles.svelte'
 	import RainbowBackground from '$lib/UI/Effects/RainbowBackground.svelte'
 	import WaterDrop from '$lib/UI/Effects/WaterDrop.svelte'
-	import { onMount } from 'svelte'
 
-	let dotPlacement = 0
-
-	onMount(() => {
-		dotPlacement = Math.random() * Math.PI * 2
-	})
+	let viewportWidth: number
+	let viewportHeight: number
+	const dropMargin = 100
 
 	let drops: {
 		dropping: boolean
@@ -29,15 +26,19 @@
 			{
 				dropping: true,
 				radius: Math.random() * 100 + 70,
-				x: Math.random() * 1600 + 60,
-				y: Math.random() * 600 + 60,
+				x: Math.random() * (viewportWidth - dropMargin * 2) - dropMargin,
+				y: Math.random() * (viewportHeight - dropMargin * 2) - dropMargin,
 				content: e.key
 			}
 		]
 	}
 </script>
 
-<svelte:window on:keypress={type} />
+<svelte:window
+	on:keypress={type}
+	bind:innerWidth={viewportWidth}
+	bind:innerHeight={viewportHeight}
+/>
 
 <section>
 	<RainbowBackground>
