@@ -102,16 +102,16 @@
       "src/routes/+page.svelte"
     ]
   },
-  "src/routes/+error.css": {
-    "file": "_app/immutable/assets/_error-c4a63948.css",
-    "src": "src/routes/+error.css"
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-600a77ce.css",
+    "src": "src/routes/+layout.css"
   },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-0260d0fb.css",
     "src": "src/routes/+page.css"
   },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-600a77ce.css",
-    "src": "src/routes/+layout.css"
+  "src/routes/+error.css": {
+    "file": "_app/immutable/assets/_error-c4a63948.css",
+    "src": "src/routes/+error.css"
   }
 }
